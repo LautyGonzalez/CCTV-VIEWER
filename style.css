@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(71, 70, 79);
+    background: linear-gradient(115deg, rgba(71, 70, 79, 1) 0%, rgba(0, 0, 0, 1) 100%) no-repeat;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+li:hover {
+    opacity: 50%;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#logo {
+    margin-left: 20px;
+}
+
+header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.41);
+}
+
+.nav-bar {
+    margin-right: 20px;
+}
+
+.CameraWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    color: white;
+    border: 1px solid #444;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.viewer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+}
+
+.modalShow {
+    width: 50%;
+    background-color: rgb(52, 52, 52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-left: 25%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+    gap: 10px;
+}
+
+#agregarCamara {
+    display: flex;
+    border: none;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    background-color: #444;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.botonAgregarCamara {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-camera {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.CameraView:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.CameraWrapper.original {
+    display: none;
+}
+
+button#CloseModalButton {
+    margin-top: -5%;
+    margin-right: -105%;
+    margin-bottom: 2%;
+}
+
+button#SaveChangesButton {
+    margin-top: 6%;
+    margin-right: -100%;
+    margin-bottom: -5%;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+    <title>Home | CCTV-VIEWER</title>
+</head>
+<body>
+    <header>
+        <a href="" id="logo">
+            <p>CCTV-VIEWER</p>
+        </a>
+
+        <div class="nav-bar">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Configuración</a></li>
+                <li><a href="">Perfil</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="viewer-grid">
+        <div class="CameraWrapper original">
+            <div class="CameraView">
+                <img src="./img/Black-Test-Image.jpg" alt="">
+            </div>
+            <p class="CameraName">Camara Test1</p>
+        </div>
+
+        </div>
+    </section>
+
+    <div class="modal" id="hideModal">
+        <p>Agregar Camara</p>
+        <form action="submit" class="form-camera">
+            <input type="text" name="" id="Nombre-Camera" placeholder="Ingrese el nombre de la Camara" required>
+            <input type="text" name="" id="Source-Camera" placeholder="Ingrese direccion ip" required>
+            <input type="button" id="AddCameraButton" value="Agregar Camara">
+        </form>
+    </div>
+
+    <div class="botonAgregarCamara">
+        <button id="agregarCamara">+</button>
+    </div>
+
+    <div class="modal" id="CameraModalHide">
+        <button id="CloseModalButton" class="close-button">X</button>
+        <img id="modalCameraLive"src="" alt="">
+        <div>
+            <label for="modalCameraName">Camera Name:</label>
+            <input type="text" id="modalCameraName">
+        </div>
+        <div>
+            <label for="modalCameraSource">Camera Source:</label>
+            <input type="text" id="modalCameraSource">
+        </div>
+        <button id="SaveChangesButton">Save</button>
+    </div>
+
+    <footer>
+        <p>CCTV-VIEWER by Lautaro Gonzalez | ALL RIGHT RESERVES ©</p>
+    </footer>
+</body>
+</html>
