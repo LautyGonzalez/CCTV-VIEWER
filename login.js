@@ -9,7 +9,7 @@ Formulario.addEventListener("submit", function(event){
     console.log(FormPasswd)
     console.log(FormUsuario)
     if(FormUsuario == "admin" && FormPasswd == "123456"){ //Completamente inseguro, es solo para la prueba y la entrega del tp
-        window.location.href = './index.html'; 
+        window.location.href = './home.html'; 
     } else {
         alert("Usuario o contraseña incorrectos");
     }
